@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belrestaurant</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="./logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="back">
+        <nav class="navbar">
+            <div class="divbar">
+                <a href="#" class="logo"><img src="logo.png"alt="chef logo"width="50px" >Belrestaurant</a>
+                <div>
+                    <a href="#" class="lin">HOME</a>
+                    <a href="#" class="lin">MENU</a>
+                    <a href="#" class="lin">ABOUT</a>
+                    <a href="#" class="lin">BOOK TABLE</a>
+                    <a href="#" class="lin"><i class='bx bxs-user'></i></a>
+                    <a href="#" class="lin"><i class='bx bxs-cart'></i></a>
+                    <a href="#" class="lin"><i class='bx bx-search-alt-2'></i></a>
+                </div>
+            </div>
+        </nav>
+        <h1 class="h1"><i>Fast Food Restaurant</i></h1>
+        <p class="paragraph">
+            Welcome to Belrestaurant! Here, you can enjoy tasty meals that are quick and easy on the wallet. Our friendly staff is ready to serve you, and we also focus on using quality ingredients to pack our dishes with flavor.
+        </p>
+        <p class="order-button"><button class="order">Order Online</button></p>
+    </section>
+
+    <section class="row">
+        <div class="food">
+            <img src="pizza3.jpeg" id="a">
+            <h3>Tasty Thursday</h3>
+            <p>20% off</p>
+            <button class="z">Order Now <i class='bx bx-cart'></i></button>
+        </div>
+        <div class="food">
+            <img src="pasta3.jpeg" id="a">
+            <h3>Tasty Thursday</h3>
+            <p>20% off</p>
+            <button class="z">Order Now <i class='bx bx-cart'></i></button>
+        </div>
+        <div class="food">
+            <img src="burger2.jpeg" id="a">
+            <h3>Pizza Days</h3>
+            <p>15% off</p>
+            <button class="z">Order Now <i class='bx bx-cart'></i></button>
+        </div>
+    </section>
+
+    <p class="menu">Our Menu</p>
+    <nav class="navigation">
+        <a href="#p1" class="li">All</a>
+        <a href="#p2" class="li">Burger</a>
+        <a href="#p3" class="li">Pizza</a>
+        <a href="#p4" class="li">Pasta</a>
+        <a href="#p5" class="li">Fries</a>
+    </nav>
+    <div id="p1"></div>
+    <div id="p2"></div>
+    <div id="p3"></div>
+    <div id="p4"></div>
+    <div id="p5"></div>
+    <section class="column">
+        <div class="hai burger">
+            <img src="burger2.jpeg" class="bug">
+            <p class="pa">African Diners Burger <i class='bx bx-cart' id="o"></i><br>$20</p>
+        </div>
+        <div class="hai pizza">
+            <img src="pizza1.jpeg" class="bug">
+            <p class="pa">Classic Pizza <i class='bx bx-cart' id="o"></i><br>$19</p>
+        </div>
+        <div class="hai pasta">
+            <img src="pasta.jpeg" class="bug">
+            <p class="pa">Creamy Pasta <i class='bx bx-cart' id="o"></i><br>$15</p>
+        </div>
+        <div class="hai pizza">
+            <img src="pizza2.jpeg" class="bug">
+            <p class="pa">Pepperoni Pizza <i class='bx bx-cart' id="o"></i><br>$23</p>
+        </div>
+        <div class="hai fries">
+            <img src="fish.jpeg" class="bug">
+            <p class="pa">Crispy Fries <i class='bx bx-cart' id="o"></i><br>$16</p>
+        </div>
+        <div class="hai fries">
+            <img src="chicken.jpeg" class="bug">
+            <p class="pa">Fried chicken <i class='bx bx-cart' id="o"></i><br>$16</p>
+        </div>
+        <div class="hai fries">
+            <img src="pasta2.jpeg" class="bug">
+            <p class="pa">Sweet pasta ever <i class='bx bx-cart' id="o"></i><br>$16</p>
+        </div>
+        <div class="hai fries">
+            <img src="burger.jpeg" class="bug">
+            <p class="pa">Rwandan Burger <i class='bx bx-cart' id="o"></i><br>$16</p>
+        </div>
+    </section>
+
+    <section class="readmore" onclick="alert('Good Job!');">
+        <img src="bi.png" alt="footer">
+        <p class="bb">
+            Hey there! Welcome to Belrestaurant, where you can grab tasty meals that are quick and easy on the wallet. Our team is all about friendly service and 
+            creating a great vibe. We focus on using quality ingredients to give you bold flavors. Whether you’re after a date night, a family get-together, or just
+             a snack, our menu has something for everyone. Come and enjoy good food and great moments with us!
+            <br><button class="Read">Read More</button>
+        </p>
+    </section>
+
+    <section class="booking">
+        <p>Book a Table</p>
+        <input type="text" placeholder="Your Name" class="form">
+        <input type="tel" placeholder="Phone Number" class="form">
+        <input type="email" placeholder="Your Email" class="form">
+        <select class="form">
+            <option value="" disabled selected>How many persons?</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <input type="date" class="form">
+        <button class="book">BOOK NOW</button>
+    </section>
+
+    <footer class="footer">
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p><i class='bx bx-map'></i> 123 Food Street, Kigli City</p>
+            <p><i class='bx bx-phone'></i> +250 728832555</p>
+            <p><i class='bx bx-envelope'></i> igihozobelise6@gmail.com</p>
+        </div>
+        <div class="about">
+            <h3>Belrestaurant</h3>
+            <p>Welcome to Belrestaurant, ensuring a fantastic dining experience with quality food and great service.</p>
+            <div class="social-links">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-instagram'></i>
+            </div>
+        </div>
+        <div class="hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Sunday</p>
+            <p>8:00 AM - 10:00 PM</p>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get our latest updates</p>
+            <input type="email" placeholder="Your Email" style="padding: 0.5rem; width: 100%; margin-top: 0.5rem;">
+            <button style="background: orange; color: white; border: none; padding: 0.5rem 1rem; margin-top: 0.5rem; border-radius: 5px;">Subscribe</button>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>© 2025 Belrestaurant. All Rights Reserved. Designed by Belise Best Designs</p>
+    </div>
+</body>
+</html>

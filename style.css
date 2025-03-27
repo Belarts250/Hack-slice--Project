@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+}
+
+
+.back {
+    background-image: url(new.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.divbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.lin {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.lin:hover {
+    color: orange;
+}
+
+.h1 {
+    color: orange;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.paragraph {
+    color: white;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.order-button {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.order {
+    background-color: orange;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.order:hover {
+    transform: scale(1.05);
+}
+
+/* Deals Section */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.food {
+    background-color: #232a2a;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+#a {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.z {
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.z:hover {
+    background-color: darkorange;
+}
+
+/* Menu Section */
+.menu {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: cursive;
+}
+
+.navigation {
+    text-align: center;
+    padding: 1rem;
+    background: #f5f5f5;
+    margin: 0 2rem;
+    border-radius: 25px;
+}
+
+.li {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.li:hover {
+    color: white;
+    background-color: #3b4949;
+    border-radius: 25px;
+}
+
+.li:target {
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.hai {
+    background-color: #232a2a;
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Hide all items by default */
+.hai {
+    display: none;
+}
+
+/* Show all items when #p1 (All) is targeted or no specific target */
+#p1:target ~ .column .hai,
+:not(:target) ~ .column .hai {
+    display: block;
+}
+
+/* Show specific categories when targeted */
+#p2:target ~ .column .hai:not(.burger),
+#p3:target ~ .column .hai:not(.pizza),
+#p4:target ~ .column .hai:not(.pasta),
+#p5:target ~ .column .hai:not(.fries) {
+    display: none;
+}
+
+#p2:target ~ .column .hai.burger,
+#p3:target ~ .column .hai.pizza,
+#p4:target ~ .column .hai.pasta,
+#p5:target ~ .column .hai.fries {
+    display: block;
+}
+
+.hai:hover {
+    transform: translateY(-5px);
+}
+
+.bug {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pa {
+    padding: 1rem;
+}
+
+#o {
+    background-color: orange;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    float: right;
+}
+
+/* Read More Section */
+.readmore {
+    background-color: #232a2a;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.readmore img {
+    max-width: 200px;
+}
+
+.Read {
+    background-color: orange;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Booking Section */
+.booking {
+    padding: 2rem;
+    text-align: center;
+}
+
+.form {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.book {
+    background-color: orange;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a2121;
+    color: white;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+    color: orange;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+    color: orange;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem;
+    background-color: #151a1a;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .divbar {
+        flex-direction: column;
+    }
+    
+    .h1 {
+        font-size: 1.5rem;
+    }
+    
+    .navigation {
+        margin: 0 1rem;
+    }
+    
+    .li {
+        padding: 0.5rem 1rem;
+    }
+}
